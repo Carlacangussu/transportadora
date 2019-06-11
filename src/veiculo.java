@@ -6,11 +6,12 @@ public abstract class veiculo {
 	protected double rendimento2;
 	protected int carga_max;
 	protected int vel_med;
-	protected double coef_perda1;
-	protected double coef_perda2;
 	
 	public double getRendimento_real1() { //sobre escrever nas filhas
-        return this.rendimento1- (carga_max * coef_perda1);
+        return this.rendimento1- (carga_max * 0.3);
+    }
+	public double getRendimento_real2() { //sobre escrever nas filhas
+        return this.rendimento2- (carga_max * 0.4);
     }
 	public double getCombustivel1() {
 		return combustivel1;
