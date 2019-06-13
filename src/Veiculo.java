@@ -1,18 +1,23 @@
 
-public abstract class veiculo {
-	protected double combustivel1;
-	protected double combustivel2;
-	protected double rendimento1;
-	protected double rendimento2;
-	protected int carga_max;
-	protected int vel_med;
+public abstract class Veiculo {
+	private double combustivel1;
+	private double combustivel2;
+	private double rendimento1;
+	private double rendimento2;
+	private int carga_max;
+	private int vel_med;
+
+	public Veiculo() {
+		super();
+	}
+
 	
-	//public double getRendimento_real1() { //sobre escrever nas filhas
-    //    return this.rendimento1 = rendimento1;
-   // }
-	//public double getRendimento_real2() { //sobre escrever nas filhas
-   //     return this.rendimento2- (carga_max * 0.4);
-  //  }
+	public double getRendimento_real1() { //sobre escrever nas filhas
+      return this.rendimento1 = rendimento1;
+    }
+	public double getRendimento_real2() { //sobre escrever nas filhas
+       return this.rendimento2- (carga_max * 0.4);
+    }
 	public double getCombustivel1() {
 		return combustivel1;
 	}
